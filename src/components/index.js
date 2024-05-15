@@ -1,7 +1,7 @@
 // setting up component imports
 
-import Navbar from "./NavBar";
-import Sidebar from "./SideBar";
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 
 export {Navbar, Sidebar, Footer}
