@@ -1,6 +1,10 @@
+import { Hero } from '../components'
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <main>
+      <Hero />
+    </main>
   )
 }
+
 export default HomePage
