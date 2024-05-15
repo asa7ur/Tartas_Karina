@@ -1,5 +1,22 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Navbar, Sidebar, Footer } from './components'
+import { Home, Products, SingleProduct, Contact, Error } from './pages'
+
 function App() {
-  return <h1>hello world</h1>
+  return (
+    <Router>
+      <Navbar />
+      <Sidebar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='productos' element={<Products />} />
+        <Route path='productos/:id' element={<SingleProduct />} />
+        <Route path='contacto' element={<Contact />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
+      <Footer />
+    </Router>
+  )
 }
 
 export default App
