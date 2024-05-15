@@ -8,5 +8,6 @@ import Error from "./Error";
 import Loading from "./Loading";
 import Product from "./Product";
 import FeaturedProducts from "./FeaturedProducts";
+import Services from "./Services";
 
-export {Navbar, Sidebar, Footer, Hero, Error, Loading, Product, FeaturedProducts}
+export {Navbar, Sidebar, Footer, Hero, Error, Loading, Product, FeaturedProducts, Services}

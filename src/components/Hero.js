@@ -8,7 +8,7 @@ const Hero = () => {
       <div className='content'>
         <h3>del obrador a tu casa</h3>
         <h1>Tartas Exquisitas</h1>
-        <Link to='/products' className='btn'>
+        <Link to='/productos' className='btn'>
           ir a Colección
         </Link>
       </div>
