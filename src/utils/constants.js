@@ -15,3 +15,5 @@ export const links = [
     url: '/contacto',
   },
 ]
+
+export const products_url = '/.netlify/functions/products'

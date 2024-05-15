@@ -1,8 +1,9 @@
-import { Hero } from '../components'
+import { Hero, FeaturedProducts } from '../components'
 const HomePage = () => {
   return (
     <main>
       <Hero />
+      <FeaturedProducts/>
     </main>
   )
 }
