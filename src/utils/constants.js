@@ -7,11 +7,11 @@ export const links = [
   {
     id: 2,
     text: 'productos',
-    url: '/products',
+    url: '/productos',
   },
   {
     id: 3,
     text: 'contacto',
-    url: '/contact',
+    url: '/contacto',
   },
 ]

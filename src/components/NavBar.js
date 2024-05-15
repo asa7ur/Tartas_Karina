@@ -3,8 +3,10 @@ import logo from '../assets/logo.png'
 import { FaBars, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
+import { useProductsContext } from '../context/products_context'
 
 const Navbar = () => {
+  const { openSidebar } = useProductsContext()
   return (
     <NavContainer>
       <div className='nav-center'>
@@ -12,7 +14,7 @@ const Navbar = () => {
           <Link to='/'>
             <img src={logo} alt='tartas karina' className='nav-logo' />
           </Link>
-          <button type='button' className='nav-toggle'>
+          <button type='button' className='nav-toggle' onClick={openSidebar}>
             <FaBars />
           </button>
         </div>
