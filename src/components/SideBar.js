@@ -1,6 +1,6 @@
 import logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
-import { FaTimes, FaWhatsapp } from 'react-icons/fa'
+import { FaTimes} from 'react-icons/fa'
 import { links } from '../utils/constants'
 import styled from 'styled-components'
 import { useProductsContext } from '../context/products_context'
@@ -28,14 +28,6 @@ const Sidebar = () => {
               </li>
             )
           })}
-          <a
-            href='https://wa.me/34640213878'
-            className='nav-contact'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <FaWhatsapp />
-          </a>
         </ul>
       </aside>
     </SidebarContainer>

@@ -9,5 +9,6 @@ import Loading from "./Loading";
 import Product from "./Product";
 import FeaturedProducts from "./FeaturedProducts";
 import Services from "./Services";
+import Contact from "./Contact";
 
-export {Navbar, Sidebar, Footer, Hero, Error, Loading, Product, FeaturedProducts, Services}
+export {Navbar, Sidebar, Footer, Hero, Error, Loading, Product, FeaturedProducts, Services, Contact}

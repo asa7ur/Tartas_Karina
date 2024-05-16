@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import logo from '../assets/logo.png'
-import { FaBars, FaWhatsapp } from 'react-icons/fa'
+import { FaBars} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { links } from '../utils/constants'
+import { links, socials } from '../utils/constants'
 import { useProductsContext } from '../context/products_context'
 
 const Navbar = () => {
@@ -28,14 +28,22 @@ const Navbar = () => {
             )
           })}
         </ul>
-        <a
-          href='https://wa.me/34640213878'
-          className='nav-contact'
-          target='_blank'
-          rel='noreferrer'
-        >
-          <FaWhatsapp />
-        </a>
+        <div className='links'>
+          {socials.map((social) => {
+            const { id, icon, url } = social
+            return (
+              <a
+                key={id}
+                href={url}
+                className='nav-contact'
+                target='_blank'
+                rel='noreferrer'
+              >
+                {icon}
+              </a>
+            )
+          })}
+        </div>
       </div>
     </NavContainer>
   )
@@ -71,6 +79,18 @@ const NavContainer = styled.nav`
   .nav-links,
   .nav-contact {
     display: none;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .links .icon {
+    color: var(--primary-500);
+    font-size: 2rem;
   }
 
   @media (min-width: 992px) {
