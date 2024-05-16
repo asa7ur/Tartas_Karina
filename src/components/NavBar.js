@@ -54,7 +54,7 @@ const NavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 6rem;
+  height: 4rem;
 
   .nav-center {
     margin: 0 auto;
@@ -62,11 +62,17 @@ const NavContainer = styled.nav`
     max-width: var(--max-width);
     padding: 1rem;
   }
+
   .nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
+  .nav-logo{
+    height: 50px;
+  }
+
   .nav-toggle {
     background: transparent;
     border: transparent;
@@ -76,6 +82,7 @@ const NavContainer = styled.nav`
       font-size: 2rem;
     }
   }
+
   .nav-links,
   .nav-contact {
     display: none;
@@ -94,6 +101,15 @@ const NavContainer = styled.nav`
   }
 
   @media (min-width: 992px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+
+    .nav-logo{
+      height: 75px;
+    }
+
     .nav-toggle {
       display: none;
     }

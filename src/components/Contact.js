@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { socials } from '../utils/constants'
+import { socials, form } from '../utils/constants'
 const Contact = () => {
   return (
     <Wrapper>
       <div className='section-center'>
         <div className='content'>
           <div>
-            <h1>Escríbenos</h1>
+            <h1>¿Tienes dudas?</h1>
             <p>
               Si quieres preguntarnos más información no dudes en escribirnos y
               estaremos encantadas de ofrecerte la mejor experiencia Tartas
@@ -24,43 +24,28 @@ const Contact = () => {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    {icon}{text}
+                    {icon}
+                    {text}
                   </a>
                 )
               })}
             </div>
           </div>
           <form class='form'>
-            <div class='form-section'>
-              <div class='form-group'>
-                <input
-                  type='text'
-                  class='user_name'
-                  id='name'
-                  placeholder='Nombre'
-                />
-              </div>
-
-              <div class='form-group'>
-                <input
-                  type='email'
-                  class='user_email'
-                  id='email'
-                  placeholder='Email'
-                />
-              </div>
-            </div>
-
+            <h2>Escríbenos</h2>
             <div class='form-group'>
-              <input
-                type='text'
-                class='subject'
-                id='subject'
-                placeholder='Motivo de consulta'
-              />
-            </div>
-
-            <div class='form-group'>
+              {form.map((line) => {
+                const { n, type, id, cl, placeholder } = line
+                return (
+                  <input
+                    key={n}
+                    type={type}
+                    className={cl}
+                    id={id}
+                    placeholder={placeholder}
+                  />
+                )
+              })}
               <textarea
                 id='message'
                 class='message'
@@ -153,7 +138,7 @@ const Wrapper = styled.section`
 
   input {
     font-family: var(--bodyFont);
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .result-container {

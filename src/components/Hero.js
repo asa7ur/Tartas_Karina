@@ -20,7 +20,7 @@ export default Hero
 
 const Wrapper = styled.section`
   position: relative;
-  height: calc(100vh - 6rem);
+  height: calc(100vh - 4rem);
   width: 100%;
   background-size: cover;
   display: grid;
@@ -43,6 +43,13 @@ const Wrapper = styled.section`
   }
 
   @media (min-width: 992px) {
+    position: relative;
+    height: calc(100vh - 6rem);
+    width: 100%;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+
     .content {
       top: 45%;
     }
