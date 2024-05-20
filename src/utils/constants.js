@@ -46,7 +46,7 @@ export const socials = [
   {
     id: 1,
     icon: <FaWhatsapp className='icon' />,
-    text: '+34 611 21 38 78',
+    text: '+34 640 21 38 78',
     url: 'https://wa.me/34640213878',
   },
   {

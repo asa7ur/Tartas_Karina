@@ -31,9 +31,9 @@ const Contact = () => {
               })}
             </div>
           </div>
-          <form class='form'>
+          <form className='form'>
             <h2>Escríbenos</h2>
-            <div class='form-group'>
+            <div className='form-group'>
               {form.map((line) => {
                 const { n, type, id, cl, placeholder } = line
                 return (
@@ -48,17 +48,17 @@ const Contact = () => {
               })}
               <textarea
                 id='message'
-                class='message'
-                spellcheck='false'
+                className='message'
+                spellCheck='false'
                 placeholder='Tu mensaje'
               ></textarea>
             </div>
 
-            <div class='form-group result-container'>
-              <button type='submit' class='submit-btn btn'>
+            <div className='form-group result-container'>
+              <button type='submit' className='submit-btn btn'>
                 Enviar mensaje
               </button>
-              <p class='result'>Enviado con exito!</p>
+              <p className='result'>Enviado con exito!</p>
             </div>
           </form>
         </div>

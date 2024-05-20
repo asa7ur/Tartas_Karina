@@ -76,7 +76,7 @@ const NavContainer = styled.nav`
   .nav-toggle {
     background: transparent;
     border: transparent;
-    color: var(--primary-500);
+    color: var(--primary-900);
     cursor: pointer;
     svg {
       font-size: 2rem;
@@ -96,7 +96,7 @@ const NavContainer = styled.nav`
   }
 
   .links .icon {
-    color: var(--primary-500);
+    color: var(--primary-900);
     font-size: 2rem;
   }
 
