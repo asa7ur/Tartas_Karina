@@ -14,7 +14,7 @@ import PageHero from './PageHero'
 import ProductList from './ProductList'
 import Filters from './Filters'
 import GridView from './GridView'
-import ListView from './ListView'
+import Sort from './Sort'
 
 export {
   Navbar,
@@ -31,5 +31,5 @@ export {
   ProductList,
   Filters,
   GridView,
-  ListView,
+  Sort
 }

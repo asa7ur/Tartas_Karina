@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import { FaSearch } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
@@ -6,21 +7,22 @@ const Product = ({ image, name, id }) => {
     <Wrapper>
       <div className='container'>
         <img src={image} alt={name} />
-        <Link to={`/products/${id}`} className='link'>
+        <Link to={`/productos/${id}`} className='link'>
           <FaSearch />
         </Link>
       </div>
-      <h4>{name}</h4>
+      <footer>
+        <h5>{name}</h5>
+      </footer>
     </Wrapper>
   )
 }
 const Wrapper = styled.article`
   .container {
     position: relative;
-    background: var(--black);
+    background: var(--clr-black);
     border-radius: var(--radius);
   }
-
   img {
     width: 100%;
     display: block;
@@ -28,13 +30,12 @@ const Wrapper = styled.article`
     border-radius: var(--radius);
     transition: var(--transition);
   }
-
   .link {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--primary-500);
+    background: var(--clr-primary-5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,26 +47,30 @@ const Wrapper = styled.article`
     cursor: pointer;
     svg {
       font-size: 1.25rem;
-      color: var(--white);
+      color: var(--clr-white);
     }
   }
-
   .container:hover img {
     opacity: 0.5;
   }
-
   .container:hover .link {
     opacity: 1;
   }
-
-  h4 {
+  footer {
     margin-top: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+  }
+  footer h5,
+  footer p {
     margin-bottom: 0;
-    font-family: var(--bodyFont);
     font-weight: 400;
+  }
+
+  footer p {
+    color: var(--clr-primary-5);
+    letter-spacing: var(--spacing);
   }
 `
 export default Product

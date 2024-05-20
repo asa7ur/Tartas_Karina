@@ -12,7 +12,7 @@ exports.handler = async function () {
 
     const products = response.records.map((product) => {
       const { id, fields } = product
-      const { name, featured, images, description, ingredients, category } =
+      const { name, featured, images, description, ingredient, category } =
         fields
       const { url } = images[0]
       return {
@@ -20,7 +20,7 @@ exports.handler = async function () {
         name,
         featured,
         description,
-        ingredients,
+        ingredient,
         category,
         image: url,
       }
