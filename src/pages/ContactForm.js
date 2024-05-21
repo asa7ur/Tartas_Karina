@@ -1,14 +1,14 @@
 import styled from "styled-components"
-import { PageHero, Contact } from "../components"
+import { PageHero, Form } from "../components"
 
-const ContactMe = () => {
+const ContactForm = () => {
   return (
     <Wrapper>
       <PageHero title='contacto' />
-      <Contact />
+      <Form />
     </Wrapper>
   )
 }
-export default ContactMe
+export default ContactForm
 
 const Wrapper = styled.main``

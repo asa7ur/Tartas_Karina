@@ -9,7 +9,7 @@ import Loading from './Loading'
 import Product from './Product'
 import FeaturedProducts from './FeaturedProducts'
 import Services from './Services'
-import Contact from './Contact'
+import Form from './Form'
 import PageHero from './PageHero'
 import ProductList from './ProductList'
 import Filters from './Filters'
@@ -27,7 +27,7 @@ export {
   Product,
   FeaturedProducts,
   Services,
-  Contact,
+  Form,
   PageHero,
   ProductList,
   Filters,

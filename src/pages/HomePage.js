@@ -1,11 +1,11 @@
-import { Hero, FeaturedProducts, Services, Contact } from '../components'
+import { Hero, FeaturedProducts, Services, Form } from '../components'
 const HomePage = () => {
   return (
     <main>
       <Hero />
       <FeaturedProducts/>
       <Services/>
-      <Contact/>
+      <Form/>
     </main>
   )
 }

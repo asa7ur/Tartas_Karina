@@ -1,6 +1,9 @@
 import styled from 'styled-components'
-import { socials, form } from '../utils/constants'
-const Contact = () => {
+import { socials } from '../utils/constants'
+import { useFormContext } from '../context/form_context'
+
+const Form = () => {
+  const { state, handleChange, handleSubmit, resultRef } = useFormContext()
   return (
     <Wrapper>
       <div className='section-center'>
@@ -31,35 +34,90 @@ const Contact = () => {
               })}
             </div>
           </div>
-          <form className='form'>
+          <form className='form' onSubmit={handleSubmit}>
             <h2>Escríbenos</h2>
             <div className='form-group'>
-              {form.map((line) => {
-                const { n, type, id, cl, placeholder } = line
-                return (
-                  <input
-                    key={n}
-                    type={type}
-                    className={cl}
-                    id={id}
-                    placeholder={placeholder}
-                  />
-                )
-              })}
+              <input
+                type='text'
+                name='name'
+                className='user_name'
+                value={state.name}
+                onChange={handleChange}
+                placeholder='Your Name'
+                required
+              />
+            </div>
+            <div className='form-group'>
+              <input
+                type='email'
+                name='email'
+                className='user_email'
+                value={state.email}
+                onChange={handleChange}
+                placeholder='Your Email'
+                required
+              />
+            </div>
+            <div className='form-group'>
+              <input
+                type='text'
+                name='subject'
+                className='subject'
+                value={state.subject}
+                onChange={handleChange}
+                placeholder='Subject'
+                required
+              />
+            </div>
+            <div className='form-group'>
               <textarea
-                id='message'
+                name='message'
                 className='message'
-                spellCheck='false'
+                value={state.message}
+                onChange={handleChange}
                 placeholder='Tu mensaje'
+                required
               ></textarea>
             </div>
-
             <div className='form-group result-container'>
-              <button type='submit' className='submit-btn btn'>
-                Enviar mensaje
+              <button
+                type='submit'
+                className='submit-btn btn'
+                disabled={state.loading}
+              >
+                {state.loading ? <span className='sending'></span> : 'Send'}
               </button>
-              <p className='result'>Enviado con exito!</p>
+              <div className='result' ref={resultRef} style={{ opacity: 0 }}>
+                {state.result}
+              </div>
             </div>
+            {/* <div className='form-group'>
+                {form.map((line) => {
+                  const { n, type, id, cl, placeholder } = line
+                  return (
+                    <input
+                      key={n}
+                      type={type}
+                      className={cl}
+                      id={id}
+                      placeholder={placeholder}
+                    />
+                  )
+                })}
+                <textarea
+                  id='message'
+                  className='message'
+                  spellCheck='false'
+                  placeholder='Tu mensaje'
+                ></textarea>
+              </div>
+  
+              <div className='form-group result-container'>
+                <button type='submit' className='submit-btn btn'>
+                  Enviar mensaje
+                </button>
+                <p className='result'>Enviado con exito!</p>
+              </div> */}
           </form>
         </div>
       </div>
@@ -67,7 +125,7 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Form
 
 const Wrapper = styled.section`
   padding: 2rem 0 5rem 0;
