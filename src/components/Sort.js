@@ -27,7 +27,9 @@ const Sort = () => {
           <BsList />
         </button>
       </div>
-      <p>{products.length} productos encontrados</p>
+      <p>
+        {products.length} {`${products.length > 1 ? 'productos econtrados' : 'producto econtrado'}`}
+      </p>
       <hr />
       <form>
         <select
