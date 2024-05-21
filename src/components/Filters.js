@@ -124,15 +124,18 @@ const Wrapper = styled.section`
     color: var(--grey-500);
     cursor: pointer;
   }
+
   .active {
     border-color: var(--grey-500);
   }
+
   .company {
     background: var(--grey-950);
     border-radius: var(--radius);
     border-color: transparent;
     padding: 0.25rem;
   }
+
   .all-btn {
     display: flex;
     align-items: center;
@@ -140,18 +143,22 @@ const Wrapper = styled.section`
     margin-right: 0.5rem;
     opacity: 0.5;
   }
+
   .active {
     opacity: 1;
   }
+
   .all-btn .active {
     text-decoration: underline;
   }
+
   .clear-btn {
     background: var(--red-dark);
     color: var(--white);
     padding: 0.25rem 0.5rem;
     border-radius: var(--radius);
   }
+  
   @media (min-width: 992px) {
     .content {
       position: sticky;
