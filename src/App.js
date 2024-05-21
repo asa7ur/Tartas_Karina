@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Navbar, Sidebar, Footer } from './components'
-import { Home, Products, SingleProductPage, Contact, Error } from './pages'
+import { Home, Products, SingleProductPage, ContactMe, Error } from './pages'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='productos' element={<Products />} />
         <Route path='productos/:id' element={<SingleProductPage />} />
-        <Route path='contacto' element={<Contact />} />
+        <Route path='contacto' element={<ContactMe />} />
         <Route path='*' element={<Error />} />
       </Routes>
       <Footer />

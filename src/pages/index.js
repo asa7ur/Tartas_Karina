@@ -3,7 +3,7 @@
 import Home from './HomePage'
 import Products from './ProductsPage'
 import SingleProductPage from './SingleProductPage'
-import Contact from './Contact'
+import ContactMe from './ContactMe'
 import Error from './ErrorPage'
 
-export {Home, Products, SingleProductPage, Contact, Error}
+export {Home, Products, SingleProductPage, ContactMe, Error}
