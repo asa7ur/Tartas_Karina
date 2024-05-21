@@ -30,11 +30,11 @@ exports.handler = async (event, context) => {
 
 	const data = {
 		from: `${name} <${email}>`,
-		to: 'Garik Asatryan <asa7ur@gmail.com>',
+		to: 'Karine Asatryan <kar.asat.76@gmail.com>',
 		subject: subject,
 		html: `
-			<p>From: ${name}</p>
-			<p>Email: ${email}</p>
+			<p>De: ${name}</p>
+			<p>Correo electrónico: ${email}</p>
 			<p>${message}</p>
 		`,
 	}

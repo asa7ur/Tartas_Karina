@@ -57,30 +57,6 @@ export const socials = [
   },
 ]
 
-export const form = [
-  {
-    n: 1,
-    type: 'text',
-    id: 'name',
-    cl: 'user_name',
-    placeholder: 'Nombre',
-  },
-  {
-    n: 2,
-    type: 'email',
-    id: 'email',
-    cl: 'user_email',
-    placeholder: 'Email',
-  },
-  {
-    n: 3,
-    type: 'text',
-    id: 'text',
-    cl: 'subject',
-    placeholder: 'Motivo de consulta',
-  },
-]
-
 export const products_url = '/.netlify/functions/products'
 
 export const single_product_url = `/.netlify/functions/single-product?id=`

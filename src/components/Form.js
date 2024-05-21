@@ -79,39 +79,12 @@ const Form = () => {
                 className='submit-btn btn'
                 disabled={state.loading}
               >
-                {state.loading ? <span className='sending'></span> : 'Send'}
+                {state.loading ? <span className='sending'></span> : 'Enviar mensaje'}
               </button>
               <div className='result' ref={resultRef} style={{ opacity: 0 }}>
                 {state.result}
               </div>
             </div>
-            {/* <div className='form-group'>
-                {form.map((line) => {
-                  const { n, type, id, cl, placeholder } = line
-                  return (
-                    <input
-                      key={n}
-                      type={type}
-                      className={cl}
-                      id={id}
-                      placeholder={placeholder}
-                    />
-                  )
-                })}
-                <textarea
-                  id='message'
-                  className='message'
-                  spellCheck='false'
-                  placeholder='Tu mensaje'
-                ></textarea>
-              </div>
-  
-              <div className='form-group result-container'>
-                <button type='submit' className='submit-btn btn'>
-                  Enviar mensaje
-                </button>
-                <p className='result'>Enviado con exito!</p>
-              </div> */}
           </form>
         </div>
       </div>
@@ -186,6 +159,8 @@ const Wrapper = styled.section`
   .form-group textarea {
     height: 150px;
     resize: none;
+    font-family: var(--bodyFont);
+    font-size: 1rem;
   }
 
   input {
@@ -207,7 +182,7 @@ const Wrapper = styled.section`
   }
 
   ::placeholder {
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-family: var(--bodyFont);
     color: var(--grey-400);
     text-transform: uppercase;
