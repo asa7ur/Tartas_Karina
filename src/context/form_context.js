@@ -1,16 +1,14 @@
 import axios from 'axios'
 import React, { createContext, useContext, useReducer, useRef } from 'react'
+import { initialState } from '../reducers/form_reducer'
 import reducer from '../reducers/form_reducer'
-import { SET_FIELD, SUBMIT_START, SUBMIT_ERROR, RESET_RESULT } from '../actions'
-
-const initialState = {
-  name: '',
-  email: '',
-  subject: '',
-  message: '',
-  result: '',
-  loading: false,
-}
+import {
+  SET_FIELD,
+  SUBMIT_START,
+  SUBMIT_SUCCESS,
+  SUBMIT_ERROR,
+  RESET_RESULT,
+} from '../actions'
 
 const FormContext = createContext()
 

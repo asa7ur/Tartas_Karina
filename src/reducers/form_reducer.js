@@ -1,4 +1,19 @@
-import { SET_FIELD, SUBMIT_START, SUBMIT_ERROR, RESET_RESULT } from '../actions'
+import {
+  SET_FIELD,
+  SUBMIT_START,
+  SUBMIT_SUCCESS,
+  SUBMIT_ERROR,
+  RESET_RESULT,
+} from '../actions'
+
+export const initialState = {
+  name: '',
+  email: '',
+  subject: '',
+  message: '',
+  result: '',
+  loading: false,
+}
 
 const form_reducer = (state, action) => {
   if (action.type === SET_FIELD) {

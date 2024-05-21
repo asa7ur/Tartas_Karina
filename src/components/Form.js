@@ -43,33 +43,27 @@ const Form = () => {
                 className='user_name'
                 value={state.name}
                 onChange={handleChange}
-                placeholder='Your Name'
+                placeholder='Nombre'
                 required
               />
-            </div>
-            <div className='form-group'>
               <input
                 type='email'
                 name='email'
                 className='user_email'
                 value={state.email}
                 onChange={handleChange}
-                placeholder='Your Email'
+                placeholder='Correo electrónico'
                 required
               />
-            </div>
-            <div className='form-group'>
               <input
                 type='text'
                 name='subject'
                 className='subject'
                 value={state.subject}
                 onChange={handleChange}
-                placeholder='Subject'
+                placeholder='Motivo de consulta'
                 required
               />
-            </div>
-            <div className='form-group'>
               <textarea
                 name='message'
                 className='message'
