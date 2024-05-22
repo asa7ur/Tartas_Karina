@@ -1,4 +1,5 @@
 # dependencies
+/other_files
 /node_modules
 /.pnp
 .pnp.js

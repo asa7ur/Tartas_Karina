@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import heroBcg from '../assets/heroBcg.jpeg'
+import heroBcg from '../assets/heroBcg.jpg'
 
 const Hero = () => {
-    return (
-        <Wrapper style={{ backgroundImage: `url(${heroBcg})` }}>
+  return (
+    <Wrapper style={{ backgroundImage: `url(${heroBcg})` }}>
       <div className='content'>
         <h3>del obrador a tu casa</h3>
         <h1>Tartas Exquisitas</h1>
@@ -23,8 +23,7 @@ const Wrapper = styled.section`
   height: calc(100vh - 4rem);
   width: 100%;
   background-size: cover;
-  display: grid;
-  place-items: center;
+  background-position: 100% 40%;
 
   .content {
     position: absolute;

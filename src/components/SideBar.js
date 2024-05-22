@@ -61,7 +61,7 @@ const SidebarContainer = styled.div`
     color: var(--red-light);
   }
 
-  .logo {
+  .nav-logo {
     justify-self: center;
     height: 45px;
   }
