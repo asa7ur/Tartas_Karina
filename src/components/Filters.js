@@ -1,14 +1,10 @@
 import styled from 'styled-components'
 import { useFilterContext } from '../context/filter_context'
-import { getUniqueValues} from '../utils/helpers'
+import { getUniqueValues } from '../utils/helpers'
 
 const Filters = () => {
   const {
-    filters: {
-      text,
-      category,
-      ingredient
-    },
+    filters: { text, category, ingredient },
     updateFilters,
     all_products,
     clearFilters,
@@ -19,9 +15,9 @@ const Filters = () => {
   return (
     <Wrapper>
       <div className='content'>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()} className='form'>
           {/* search input */}
-          <div className='form-control'>
+          <div className='form-control search'>
             <input
               type='text'
               name='text'
@@ -79,10 +75,10 @@ const Filters = () => {
           </div>
           {/* end of ingredients */}
 
+          <button type='button' className='clear-btn' onClick={clearFilters}>
+            Borrar
+          </button>
         </form>
-        <button type='button' className='clear-btn' onClick={clearFilters}>
-          Borrar
-        </button>
       </div>
     </Wrapper>
   )
@@ -91,14 +87,21 @@ const Filters = () => {
 export default Filters
 
 const Wrapper = styled.section`
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+
   .form-control {
     margin-bottom: 1.25rem;
     h5 {
       margin-bottom: 0.5rem;
     }
+    padding-right: 1rem;
   }
 
   .search-input {
+    display: none;
     padding: 0.5rem;
     background: var(--grey-400);
     color: var(--grey-100);
@@ -153,17 +156,36 @@ const Wrapper = styled.section`
   }
 
   .clear-btn {
+    display: none;
     background: var(--red-dark);
     color: var(--white);
     padding: 0.25rem 0.5rem;
     border-radius: var(--radius);
   }
-  
+
   @media (min-width: 992px) {
+    .form {
+      display: block;
+    }
+
+    .form-control {
+      margin-bottom: 1.25rem;
+      h5 {
+        margin-bottom: 0.5rem;
+      }
+    }
+
     .content {
       position: sticky;
       top: 1rem;
     }
+
+    .search-input{
+      display: block;
+    }
+
+    .clear-btn{
+      display: block;
+    }
   }
 `
-

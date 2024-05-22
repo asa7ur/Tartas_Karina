@@ -27,7 +27,7 @@ export default ProductImages
 
 const Wrapper = styled.section`
   .main {
-    height: 600px;
+    height: 400px;
   }
 
   img {
@@ -65,7 +65,8 @@ const Wrapper = styled.section`
   
   @media (min-width: 992px) {
     .main {
-      height: 500px;
+      height: 600px;
+      width: 700px;
     }
     .gallery {
       img {

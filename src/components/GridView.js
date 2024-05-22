@@ -18,22 +18,18 @@ export default GridView
 
 const Wrapper = styled.section`
   img {
-    height: 175px;
+    height: 200px;
   }
 
   .products-container {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem 1.5rem;
   }
 
   @media (min-width: 992px) {
     .products-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media (min-width: 1170px) {
-    .products-container {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 `

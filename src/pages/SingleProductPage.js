@@ -47,7 +47,7 @@ const SingleProductPage = () => {
           Volver a los productos
         </Link>
         <div className='product-center'>
-          <ProductImages images={images} />
+          <ProductImages images={images} className='image'/>
           <section className='content'>
             <h2>{name}</h2>
             <p className='desc'>{description}</p>
@@ -65,18 +65,42 @@ const SingleProductPage = () => {
 export default SingleProductPage
 
 const Wrapper = styled.main`
+  .section {
+    padding: 3rem 0;
+  }
+
+  .btn {
+    text-transform: uppercase;
+    background: var(--primary-300);
+    color: var(--primary-700);
+    padding: 0.375rem 0.75rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 400;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-2);
+    border-radius: 25px;
+    border-color: transparent;
+  }
+
+  .btn:hover {
+    color: var(--primary-100);
+    background: var(--primary-500);
+  }
+
   .product-center {
     display: grid;
     gap: 4rem;
     margin-top: 2rem;
   }
-  .price {
-    color: var(--clr-primary-5);
-  }
+
   .desc {
     line-height: 2;
     max-width: 45em;
   }
+
   .info {
     text-transform: capitalize;
     width: 300px;
@@ -91,9 +115,6 @@ const Wrapper = styled.main`
     .product-center {
       grid-template-columns: 1fr 1fr;
       align-items: center;
-    }
-    .price {
-      font-size: 1.25rem;
     }
   }
 `

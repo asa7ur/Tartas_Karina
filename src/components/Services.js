@@ -3,7 +3,7 @@ import { services } from '../utils/constants'
 const Services = () => {
   return (
     <Wrapper>
-      <div className='section-center'>
+      <div className='section-center section'>
         <h2>Nuestros servicios</h2>
         <div className='services-center'>
           {services.map((service) => {
@@ -25,7 +25,6 @@ const Services = () => {
 export default Services
 
 const Wrapper = styled.section`
-  padding: 5rem 0;
   background: var(--primary-200);
 
   h2 {

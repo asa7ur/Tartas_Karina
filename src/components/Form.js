@@ -6,7 +6,7 @@ const Form = () => {
   const { state, handleChange, handleSubmit, resultRef } = useFormContext()
   return (
     <Wrapper>
-      <div className='section-center'>
+      <div className='section-center section'>
         <div className='content'>
           <div>
             <h1>¿Tienes dudas?</h1>
