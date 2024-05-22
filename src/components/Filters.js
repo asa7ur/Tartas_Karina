@@ -87,6 +87,10 @@ const Filters = () => {
 export default Filters
 
 const Wrapper = styled.section`
+  .content{
+    display: none;
+  }
+
   .form {
     display: flex;
     flex-direction: row;
@@ -164,6 +168,10 @@ const Wrapper = styled.section`
   }
 
   @media (min-width: 992px) {
+    .content{
+      display: block;
+    }
+
     .form {
       display: block;
     }

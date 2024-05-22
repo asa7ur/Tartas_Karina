@@ -23,12 +23,12 @@ export default ProductsPage
 const Wrapper = styled.div`
   .products {
     display: grid;
-    gap: 3rem 1.5rem;
-    margin: 4rem auto;
+    gap: 2rem 1.5rem;
   }
-  
+
   @media (min-width: 992px) {
     .products {
+      margin: 4rem auto;
       grid-template-columns: 200px 1fr;
     }
   }
