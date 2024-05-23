@@ -170,7 +170,7 @@ const FilterContainer = styled.div`
   .content {
     display: block;
     position: sticky;
-    padding: 1rem ;
+    padding: 1rem;
   }
 
   .form {
@@ -252,6 +252,17 @@ const FilterContainer = styled.div`
 
     .filter {
       display: none;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .filter-header {
+      padding: 1rem 1.5rem;
+    }
+
+    .close-btn {
+      font-size: 1.5rem;
+      padding-top: 0.8rem;
     }
   }
 `

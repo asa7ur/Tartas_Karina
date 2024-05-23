@@ -100,7 +100,7 @@ const NavContainer = styled.nav`
     font-size: 2rem;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-between;

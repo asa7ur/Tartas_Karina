@@ -91,7 +91,7 @@ const SidebarContainer = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    width: 30vw;
+    width: auto;
     height: 100%;
     background: var(--white);
     transition: var(--transition);
@@ -104,9 +104,19 @@ const SidebarContainer = styled.div`
     z-index: 999;
   }
 
-  @media screen and (min-width: 992px) {
+  /* @media screen and (min-width: 1024px) {
     .sidebar {
       display: none;
+    }
+  } */
+
+  @media (max-width: 460px){
+    .filter-header {
+      padding: 1rem 1.5rem;
+    }
+
+    .close-btn {
+      font-size: 1.5rem;
     }
   }
 `

@@ -47,7 +47,7 @@ const Wrapper = styled.section`
     grid-template-columns: repeat(3, minmax(auto, 1fr));
     gap: 2rem 1.5rem;
     img {
-      height: 250px;
+      height: 200px;
     }
   }
 
@@ -58,10 +58,17 @@ const Wrapper = styled.section`
   @media (min-width: 1024px) {
     .featured {
       grid-template-columns: repeat(4, minmax(auto, 1fr));
+      img{
+        height: 250px;
+      }
     }
   }
 
-  @media (max-width: 460px) {
+  @media (max-width: 640px) {
+    h2{
+      font-size: 1.2rem;
+    }
+
     .featured {
       margin: 2rem auto 2rem auto;
       grid-template-columns: repeat(2, minmax(auto, 1fr));
