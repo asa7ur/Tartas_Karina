@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import logo from '../assets/logo.png'
-import { FaBars} from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links, socials } from '../utils/constants'
 import { useProductsContext } from '../context/products_context'
@@ -69,7 +69,7 @@ const NavContainer = styled.nav`
     justify-content: space-between;
   }
 
-  .nav-logo{
+  .nav-logo {
     height: 50px;
   }
 
@@ -106,7 +106,7 @@ const NavContainer = styled.nav`
     justify-content: space-between;
     height: 6rem;
 
-    .nav-logo{
+    .nav-logo {
       height: 75px;
     }
 
@@ -145,6 +145,13 @@ const NavContainer = styled.nav`
       transition: all 0.3s ease;
       &:hover {
         color: var(--primary-500);
+      }
+    }
+  }
+  @media (max-width: 460px) {
+    .nav-toggle {
+      svg {
+        font-size: 1.5rem;
       }
     }
   }

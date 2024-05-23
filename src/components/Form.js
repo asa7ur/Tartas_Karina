@@ -8,8 +8,8 @@ const Form = () => {
     <Wrapper>
       <div className='section-center section'>
         <div className='content'>
-          <div>
-            <h1>¿Tienes dudas?</h1>
+          <div className='section-hero'>
+            <h2>¿Tienes dudas?</h2>
             <p>
               Si quieres preguntarnos más información no dudes en escribirnos y
               estaremos encantadas de ofrecerte la mejor experiencia Tartas
@@ -79,7 +79,11 @@ const Form = () => {
                 className='submit-btn btn'
                 disabled={state.loading}
               >
-                {state.loading ? <span className='sending'></span> : 'Enviar mensaje'}
+                {state.loading ? (
+                  <span className='sending'></span>
+                ) : (
+                  'Enviar mensaje'
+                )}
               </button>
               <div className='result' ref={resultRef} style={{ opacity: 0 }}>
                 {state.result}
@@ -95,7 +99,19 @@ const Form = () => {
 export default Form
 
 const Wrapper = styled.section`
-  padding: 2rem 0 5rem 0;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-hero {
+    max-width: var(--fixed-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   h3 {
     text-transform: none;
@@ -114,18 +130,15 @@ const Wrapper = styled.section`
     gap: 3rem;
   }
 
-  .links a {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-
   .links .icon {
     color: var(--primary-500);
     font-size: 2rem;
   }
 
   .links a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     color: var(--grey-500);
     font-size: 1.2rem;
   }
@@ -204,13 +217,18 @@ const Wrapper = styled.section`
     animation: spinner 0.6s linear infinite;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     .content {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
       margin-top: 2rem;
     }
+
+    .section-hero {
+      align-items: flex-start;
+    }
+
     p {
       margin-bottom: 0;
       font-size: 1.2rem;
@@ -222,6 +240,41 @@ const Wrapper = styled.section`
       align-items: flex-start;
       gap: 2rem;
       margin-top: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+    }
+
+    .links .icon {
+      color: var(--primary-500);
+      font-size: 1.5rem;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--grey-500);
+      font-size: 0.875rem;
+    }
+
+    .form-group textarea {
+      height: 120px;
+      font-size: 0.875rem;
+    }
+
+    input {
+      font-size: 0.875rem;
+    }
+
+    ::placeholder {
+      font-size: 0.875rem;
     }
   }
 `

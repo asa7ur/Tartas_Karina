@@ -97,7 +97,7 @@ const Wrapper = styled.section`
     text-transform: capitalize;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     display: grid;
   }
 `

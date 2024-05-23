@@ -104,12 +104,6 @@ const SidebarContainer = styled.div`
     z-index: 999;
   }
 
-  /* @media screen and (min-width: 1024px) {
-    .sidebar {
-      display: none;
-    }
-  } */
-
   @media (max-width: 460px){
     .filter-header {
       padding: 1rem 1.5rem;

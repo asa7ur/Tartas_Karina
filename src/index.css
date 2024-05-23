@@ -35,7 +35,7 @@
   --spacing: 1px;
   --transition: all 0.3s linear;
   --max-width: 1400px;
-  --fixed-width: 620px;
+  --fixed-width: 600px;
   --padding: 0.375rem 0.75rem;
   /* fonts */
   --headingFont: 'Cinzel', serif;
@@ -270,6 +270,10 @@ p {
     padding: 0.5rem 1rem;
   }
 
+  .section{
+    padding: 3rem 0;
+  }
+  
   .section-center {
     width: 90vw;
   }

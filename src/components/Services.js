@@ -52,6 +52,7 @@ const Wrapper = styled.section`
       margin-bottom: 0;
       line-height: 1.8;
       color: var(--black);
+      max-width: 100%;
     }
   }
 
@@ -59,9 +60,10 @@ const Wrapper = styled.section`
     width: 100px;
   }
 
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .services-center {
       grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     }
   }
+
 `
