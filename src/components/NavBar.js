@@ -58,7 +58,7 @@ const NavContainer = styled.nav`
 
   .nav-center {
     margin: 0 auto;
-    width: 90vw;
+    width: 100%;
     max-width: var(--max-width);
     padding: 1rem;
   }
