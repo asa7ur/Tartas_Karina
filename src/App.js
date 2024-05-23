@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Navbar, Sidebar, Footer } from './components'
+import { NavBar, SideBar, Footer } from './components'
 import { Home, Products, SingleProductPage, ContactForm, Error } from './pages'
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Sidebar />
+      <NavBar />
+      <SideBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='productos' element={<Products />} />

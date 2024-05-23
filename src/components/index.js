@@ -1,7 +1,7 @@
 // setting up component imports
 
-import Navbar from './Navbar'
-import Sidebar from './Sidebar'
+import NavBar from './NavBar'
+import SideBar from './SideBar'
 import Footer from './Footer'
 import Hero from './Hero'
 import Error from './Error'
@@ -18,8 +18,8 @@ import Sort from './Sort'
 import ProductImages from './ProductImages'
 
 export {
-  Navbar,
-  Sidebar,
+  NavBar,
+  SideBar,
   Footer,
   Hero,
   Error,
