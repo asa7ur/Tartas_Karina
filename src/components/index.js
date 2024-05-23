@@ -16,22 +16,28 @@ import Filters from './Filters'
 import GridView from './GridView'
 import Sort from './Sort'
 import ProductImages from './ProductImages'
+import ScrollToTop from './ScrollToTop'
+import ListView from './ListView'
+import FilterButton from './FilterButton'
 
 export {
-  NavBar,
-  SideBar,
-  Footer,
-  Hero,
   Error,
-  Loading,
-  Product,
   FeaturedProducts,
-  Services,
-  Form,
-  PageHero,
-  ProductList,
+  FilterButton,
   Filters,
+  Footer,
+  Form,
   GridView,
+  Hero,
+  ListView,
+  Loading,
+  NavBar,
+  PageHero,
+  Product,
+  ProductImages,
+  ProductList,
+  ScrollToTop,
+  Services,
+  SideBar,
   Sort,
-  ProductImages
 }

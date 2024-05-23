@@ -66,7 +66,7 @@ export default SingleProductPage
 
 const Wrapper = styled.main`
   .section {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 
   .btn {

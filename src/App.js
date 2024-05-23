@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { NavBar, SideBar, Footer } from './components'
+import { NavBar, SideBar, Footer, ScrollToTop } from './components'
 import { Home, Products, SingleProductPage, ContactForm, Error } from './pages'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <SideBar />
       <Routes>

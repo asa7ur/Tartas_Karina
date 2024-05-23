@@ -1,6 +1,8 @@
 import {
   SIDEBAR_OPEN,
   SIDEBAR_CLOSE,
+  FILTER_OPEN,
+  FILTER_CLOSE,
   GET_PRODUCTS_BEGIN,
   GET_PRODUCTS_SUCCESS,
   GET_PRODUCTS_ERROR,
@@ -13,8 +15,17 @@ const products_reducer = (state, action) => {
   if (action.type === SIDEBAR_OPEN) {
     return { ...state, isSidebarOpen: true }
   }
+
   if (action.type === SIDEBAR_CLOSE) {
     return { ...state, isSidebarOpen: false }
+  }
+
+  if (action.type === FILTER_OPEN) {
+    return { ...state, isFilterOpen: true }
+  }
+
+  if (action.type === FILTER_CLOSE) {
+    return { ...state, isFilterOpen: false }
   }
 
   if (action.type === GET_PRODUCTS_BEGIN) {

@@ -42,7 +42,7 @@ const Wrapper = styled.section`
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem 1.5rem;
     img{
-      height: 200px;
+      height: 250px;
     }
   }
 

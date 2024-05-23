@@ -5,6 +5,8 @@ import { products_url as url } from '../utils/constants'
 import {
   SIDEBAR_OPEN,
   SIDEBAR_CLOSE,
+  FILTER_OPEN,
+  FILTER_CLOSE,
   GET_PRODUCTS_BEGIN,
   GET_PRODUCTS_SUCCESS,
   GET_PRODUCTS_ERROR,
@@ -15,6 +17,7 @@ import {
 
 const initialState = {
   isSidebarOpen: false,
+  isFilterOpen: false,
   products_loading: false,
   products_error: false,
   products: [],
@@ -32,8 +35,17 @@ export const ProductsProvider = ({ children }) => {
   const openSidebar = () => {
     dispatch({ type: SIDEBAR_OPEN })
   }
+
   const closeSidebar = () => {
     dispatch({ type: SIDEBAR_CLOSE })
+  }
+
+  const openFilter = () => {
+    dispatch({type: FILTER_OPEN})
+  }
+
+  const closeFilter = () => {
+    dispatch({ type: FILTER_CLOSE })
   }
 
   const fetchProducts = async (url) => {
@@ -68,6 +80,8 @@ export const ProductsProvider = ({ children }) => {
         ...state,
         openSidebar,
         closeSidebar,
+        openFilter,
+        closeFilter,
         fetchSingleProduct
       }}
     >
