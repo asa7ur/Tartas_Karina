@@ -167,7 +167,7 @@ const Wrapper = styled.section`
     border-radius: var(--radius);
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     .content{
       display: block;
     }

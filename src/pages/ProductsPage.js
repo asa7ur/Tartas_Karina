@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     gap: 1rem 1.5rem;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     .products {
       margin: 4rem auto;
       grid-template-columns: 200px 1fr;

@@ -165,7 +165,7 @@ p {
   display: inline-block;
   font-weight: 400;
   transition: var(--transition);
-  font-size: 0.875rem;
+  font-size: 1rem;
   cursor: pointer;
   box-shadow: var(--shadow-2);
   border-radius: 25px;
@@ -191,7 +191,7 @@ p {
 
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   h1 {
     font-size: 3rem;
   }
@@ -229,7 +229,49 @@ p {
   }
 
   .section-center {
-    width: 95vw;
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 0.75rem;
+  }
+
+  body {
+    font-size: 0.875rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .section-center {
+    width: 90vw;
   }
 }
 

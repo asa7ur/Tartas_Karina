@@ -32,12 +32,12 @@ const Wrapper = styled.section`
 
   .products-container {
     display: grid;
-    margin-bottom: 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem 1.5rem;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     .filter-btn {
       display: none;
     }
@@ -45,6 +45,17 @@ const Wrapper = styled.section`
     .products-container {
       margin-bottom: 0;
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 460px) {
+    img {
+      height: 150px;
+    }
+
+    .products-container {
+      gap: 1.5rem 1rem;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 `

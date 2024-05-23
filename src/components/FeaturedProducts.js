@@ -34,30 +34,42 @@ const FeaturedProducts = () => {
   )
 }
 
+export default FeaturedProducts
+
 const Wrapper = styled.section`
-  background: var(--grey-950);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   .featured {
     margin: 4rem auto 2rem auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
     gap: 2rem 1.5rem;
-    img{
+    img {
       height: 250px;
     }
   }
 
   .btn {
-    display: block;
-    max-width: 200px;
-    margin: 0 auto;
-    text-align: center;
+    margin: auto;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     .featured {
       grid-template-columns: repeat(4, minmax(auto, 1fr));
     }
   }
+
+  @media (max-width: 460px) {
+    .featured {
+      margin: 2rem auto 2rem auto;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      gap: 1.5rem 1rem;
+      img {
+        height: 150px;
+      }
+    }
+  }
 `
 
-export default FeaturedProducts

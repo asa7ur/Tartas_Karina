@@ -154,7 +154,7 @@ const FilterContainer = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    width: 35vw;
+    width: auto;
     height: 100%;
     background: var(--white);
     transition: var(--transition);
@@ -169,7 +169,8 @@ const FilterContainer = styled.div`
 
   .content {
     display: block;
-    padding-left: 1rem;
+    position: sticky;
+    padding: 1rem ;
   }
 
   .form {
@@ -246,7 +247,7 @@ const FilterContainer = styled.div`
     border-radius: var(--radius);
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     display: none;
 
     .filter {
