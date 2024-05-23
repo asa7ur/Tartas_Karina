@@ -1,7 +1,7 @@
 // setting up component imports
 
-import Navbar from './Navbar'
-import Sidebar from './Sidebar'
+import NavBar from './NavBar'
+import SideBar from './SideBar'
 import Footer from './Footer'
 import Hero from './Hero'
 import Error from './Error'
@@ -31,13 +31,13 @@ export {
   Hero,
   ListView,
   Loading,
-  Navbar,
+  NavBar,
   PageHero,
   Product,
   ProductImages,
   ProductList,
   ScrollToTop,
   Services,
-  Sidebar,
+  SideBar,
   Sort,
 }

@@ -5,7 +5,7 @@ import { links } from '../utils/constants'
 import styled from 'styled-components'
 import { useProductsContext } from '../context/products_context'
 
-const Sidebar = () => {
+const SideBar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext()
   return (
     <SidebarContainer>
@@ -34,7 +34,7 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default SideBar
 
 const SidebarContainer = styled.div`
   text-align: center;

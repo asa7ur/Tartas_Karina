@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { links, socials } from '../utils/constants'
 import { useProductsContext } from '../context/products_context'
 
-const Navbar = () => {
+const NavBar = () => {
   const { openSidebar } = useProductsContext()
   return (
     <NavContainer>
@@ -48,7 +48,7 @@ const Navbar = () => {
     </NavContainer>
   )
 }
-export default Navbar
+export default NavBar
 
 const NavContainer = styled.nav`
   display: flex;
