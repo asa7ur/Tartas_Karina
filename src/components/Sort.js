@@ -28,7 +28,7 @@ const Sort = () => {
         </button>
       </div>
       <p>
-        {products.length} {`${products.length > 1 ? 'productos econtrados' : 'producto econtrado'}`}
+        {products.length} {`${products.length > 1 ? 'productos encontrados' : 'producto encontrado'}`}
       </p>
       <hr />
       <form>
