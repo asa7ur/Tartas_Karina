@@ -273,6 +273,10 @@ const Wrapper = styled.section`
       font-size: 0.875rem;
     }
 
+    .btn{
+      font-size: 0.875rem;
+    }
+
     ::placeholder {
       font-size: 0.875rem;
     }

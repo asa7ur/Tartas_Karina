@@ -25,12 +25,11 @@ const Container = styled.footer`
   h5 {
     color: var(--white);
     margin: 0.1rem;
-
     font-weight: 400;
     text-transform: none;
     line-height: 1.25;
   }
-  @media (min-width: 776px) {
+  @media (min-width: 460px) {
     flex-direction: row;
   }
 `
